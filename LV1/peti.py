@@ -30,11 +30,11 @@ for line in smsData:
 print("Poruke koje zavrsavaju usklicnikom: %d" % counter)
 
 if(hamCount > 0):
-    print("Prosječan broj ham poruka.", int(hamWordCount/hamCount))
+    print("Prosječan broj ham poruka: %d " % int(hamWordCount/hamCount))
 else:
     print("Nema ham poruka.")
 
 if(spamCount > 0):
-    print("Prosječan broj spam poruka.", int(spamWordCount/spamCount))
+    print("Prosječan broj spam poruka: %d" % int(spamWordCount/spamCount))
 else:
     print("Nema spam poruka.")
