@@ -15,15 +15,15 @@ spamWordCount = 0
 counter = 0
 
 for line in smsData:
-    label, message = line.split(None, 1)
-    if(label == 'ham'):
+    listMessage = line.split(None, 1)
+    if(listMessage[0] == 'ham'):
         hamCount += 1
-        hamWordCount += len(message.split())
+        hamWordCount += len(listMessage[1].split())
 
-    elif(label == 'spam'):
+    elif(listMessage[0] == 'spam'):
         spamCount += 1
-        spamWordCount += len(message.split())
-        if message.strip().endswith('!'):
+        spamWordCount += len(listMessage[1].split())
+        if listMessage[1].strip().endswith('!'):
             counter += 1
 
 
