@@ -5,7 +5,7 @@
 # prosjecan broj rije ˇ ci u porukama koje su tipa spam. ˇ
 # b) Koliko SMS poruka koje su tipa spam završava usklicnikom ?
 
-spamFile = open('../SMSSpamCollection.txt')
+spamFile = open('SMSSpamCollection.txt')
 smsData = spamFile.readlines()
 
 hamCount = 0

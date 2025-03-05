@@ -4,7 +4,7 @@
 # Koliko je rijeci koje se pojavljuju samo jednom u datoteci? Ispišite ih.
 
 rijecnik = {}
-songFile = open('../song.txt')
+songFile = open('song.txt')
 
 for line in songFile:
     line = line.rstrip()
