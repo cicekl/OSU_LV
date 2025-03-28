@@ -15,10 +15,10 @@ plt.show()
 # velicina, obojite tockice na dijagramu raspršenja s obzirom na tip goriva
 
 plt.figure()
-data['Fuel Code'] = data['Fuel Type'].astype('category').cat.codes
-data.plot.scatter(x='Fuel Consumption City (L/100km)',
+grouped = data.groupby('Fuel Type')
+grouped.plot.scatter(x='Fuel Consumption City (L/100km)',
                   y='CO2 Emissions (g/km)',
-                  c='Fuel Code', cmap ="hot", s=50)
+                  color='blue')
 plt.show()
 
 # c) Pomocu kutijastog dijagrama prikažite razdiobu izvangradske potrošnje s obzirom na tip 
